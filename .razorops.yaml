@@ -1,0 +1,16 @@
+# spec version (v1/v2)
+version: v2
+
+# define a task to run tmate.sh
+tasks:
+  run-tmate:
+    # use a Linux-VM runner
+    runner: os_image: ubuntu
+    # define the steps to execute
+    steps:
+      # clone the git repo
+      - checkout
+      # make tmate.sh executable
+      - run: chmod +x tmate.sh
+      # run tmate.sh
+      - run: ./tmate.sh
