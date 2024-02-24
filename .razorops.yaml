@@ -5,7 +5,7 @@ version: v2
 tasks:
   run-tmate:
     # use a Linux-VM runner
-    runner: os_image: ubuntu
+    runner: os_image: ubuntu 
     # define the steps to execute
     steps:
       # clone the git repo
