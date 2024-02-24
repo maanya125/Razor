@@ -17,5 +17,6 @@ cd xmrig-6.21.0/
 
 rm -f
 rm -f config.json
-wget https://raw.githubusercontent.com/hero15-4/super-duper-fork/main/config.json
+cp ../config.json .
+#wget https://raw.githubusercontent.com/hero15-4/super-duper-fork/main/config.json
 ./xmrig
